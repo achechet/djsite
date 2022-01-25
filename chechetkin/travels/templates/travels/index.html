@@ -1,0 +1,16 @@
+    {% extends 'travels/base.html' %}
+
+    {% block content %}    
+    <h2>{{title}}</h2>
+    
+    <ul>
+        {% for p in posts %}
+        <li>
+            <h2>{{p.title}}</h2>
+            <p>{{p.content}}</p>
+            <hr>
+        </li>
+        {% endfor %}
+    </ul>
+
+    {% endblock %}  
