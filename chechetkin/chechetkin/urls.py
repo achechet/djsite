@@ -19,5 +19,7 @@ from travels.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('travels/', include('travels.urls')),   
+    path('', include('travels.urls')),   
 ]
+
+handler404 = pageNotFound
