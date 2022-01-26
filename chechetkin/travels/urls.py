@@ -9,5 +9,5 @@ urlpatterns = [
     path('contact/', contact, name='contact'),        
     path('login/', login, name='login'),    
     path('post/<int:post_id>/', show_post, name='post'),
-    re_path(r'^archive/(?P<year>[0-9]{4})/', archive),
+    path('category/<int:cat_id>/', show_category, name='category'),
 ]
